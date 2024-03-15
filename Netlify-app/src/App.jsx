@@ -4,8 +4,9 @@ import User from "./User"
 function App() {
 
   return (
-    <section>
-      {reviews.map((review) => <User key={review.id} data={review}/> )}
+    <section className="flex  justify-center">
+      {/* {reviews.map((review) => <User key={review.id} data={review}/> )} */}
+      <User data={reviews[0]}/>
     </section>
   )
 }
