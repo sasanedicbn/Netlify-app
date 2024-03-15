@@ -14,7 +14,13 @@ const nextUser = () => {
     });
 }
 const prevUser = () => {
-  setUser((prevUser) => prevUser -1)
+  setUser((prevUser) =>{
+    if(prevUser === 0){
+     return reviews.length - 1
+    } else{
+     return prevUser -1
+    }
+  })
 }
   return (
     <section className="flex  justify-center mt-20">
