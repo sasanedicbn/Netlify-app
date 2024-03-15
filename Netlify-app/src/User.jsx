@@ -1,8 +1,6 @@
 import React from 'react';
 import './index.css';
 
-
-
 const User = ({ data }) => {
   return (
     <div className="max-w-10rem mx-auto bg-white rounded-lg overflow-hidden shadow-md max-h-100 w-96 flex justify-center flex-col">
