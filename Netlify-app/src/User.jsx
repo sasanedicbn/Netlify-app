@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.css';
 
-const User = ({ data, nextUser, prevUser }) => {
+const User = ({ data, nextUser, prevUser, randomUser }) => {
   return (
     <div className="max-w-10rem mx-auto bg-white rounded-lg overflow-hidden shadow-md max-h-100 w-96 flex justify-center flex-col">
-      <img className="w-32 h-32 object-cover rounded-lg mx-auto" src={data.image} alt={data.name} />
+      <img className="w-32 h-32 object-cover rounded-lg mx-auto mt-5" src={data.image} alt={data.name} />
       <div className="p-6 text-center">
         <div className="font-bold text-lg mb-2 uppercase">{data.name}</div>
         <div className="text-sm text-gray-600 mb-1">{data.job}</div>
@@ -18,7 +18,7 @@ const User = ({ data, nextUser, prevUser }) => {
       &rarr;
     </button>
     </div>
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block mx-auto m-4">
+    <button onClick={randomUser} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block mx-auto m-4">
       SUPRISE ME
     </button>
 

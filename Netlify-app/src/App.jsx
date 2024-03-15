@@ -15,11 +15,11 @@ const nextUser = () => {
     });
 }
 const prevUser = () => {
-  setUser((prevUser) =>{
+  setUser((prevUser) => {
     if(prevUser === 0){
      return reviews.length - 1
     } 
-     return prevUser -1
+     return prevUser - 1
     
   })
 }
@@ -29,8 +29,8 @@ const prevUser = () => {
   };
   
   return (
-    <section className="flex  justify-center mt-20">
-      <User data={reviews[user]} nextUser={nextUser} prevUser={prevUser}/>
+    <section className="flex  justify-center mt-20 bg-red-200 p-4">
+      <User data={reviews[user]} nextUser={nextUser} prevUser={prevUser} randomUser={randomUser}/>
     </section>
   )
 }
