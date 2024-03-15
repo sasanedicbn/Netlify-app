@@ -12,7 +12,7 @@ const prevUser = () => {
 }
   return (
     <section className="flex  justify-center mt-20">
-      <User data={reviews[0]}/>
+      <User data={reviews[0]} nextUser={nextUser} prevUser={prevUser}/>
     </section>
   )
 }
