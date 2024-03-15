@@ -20,6 +20,10 @@ const User = ({ data }) => {
       &rarr;
     </button>
     </div>
+    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block mx-auto m-4">
+      SUPRISE ME
+    </button>
+
     </div>
   );
 };
